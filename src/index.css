@@ -1,0 +1,61 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Light theme variables */
+:root {
+  --bg-color: #fff;
+  --text-color: #202020;
+  --link-color: #202020;
+  --link-hover-color: #007bff; /* Bootstrap default link color */
+}
+
+/* Dark theme variables */
+[data-theme='dark'] {
+  --bg-color: #202020;
+  --text-color: #fff;
+  --link-color: #fff;
+  --link-hover-color: #ccc; /* Lighter shade for hover effect in dark mode */
+}
+
+/* General styles */
+h1,
+h2,
+h3,
+p,
+div {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.layout_page {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  width: 100% !important;
+  align-items: flex-start;
+}
+
+/* Link styles with theme variables */
+a {
+  color: var(--link-color) !important;
+  text-decoration: none; /* Optional: removes underline from links */
+}
+
+a:hover {
+  color: var(--link-hover-color) !important; 
+}
+
+/* Navbar styles */
+.navbar {
+  width: 100%;
+  padding: 0 !important;
+  background-color: var(--bg-color) !important;
+}
+
+.cont{
+  height: 100vh;
+}
