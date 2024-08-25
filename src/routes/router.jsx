@@ -6,6 +6,7 @@ import Contact from "../pages/Contact"
 import Products from "../pages/products"
 import ProductDetail from "../pages/productdetail";
 import ReducerPage from '../pages/ReducerPages';
+import Practise from "../pages/practise";
 
 export const publicroute = createBrowserRouter([
 {path:'/' , element: <Home /> },
@@ -14,5 +15,6 @@ export const publicroute = createBrowserRouter([
 {path:'/Products' , element: <Products /> },
 {path:'/Productdetail' , element: <ProductDetail /> },
 {path:'/Reducer' , element: <ReducerPage /> },
+{path:'/practise' , element: <Practise /> },
 
 ]);
